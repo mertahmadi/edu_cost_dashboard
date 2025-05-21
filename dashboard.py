@@ -3,8 +3,6 @@ import pandas as pd
 import plotly.express as px
 
 df = pd.read_csv('international.csv')
-
-# ✅ Add this line to calculate total cost
 df['Total_Cost_USD'] = (
     df['Tuition_USD'] +
     (df['Rent_USD'] + df['Insurance_USD']) * df['Duration_Years'] +
